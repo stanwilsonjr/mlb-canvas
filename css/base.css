@@ -1,0 +1,23 @@
+:root {
+  --page-bg: #efefef;
+  --canvas-bg: #333;
+}
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
+body {
+    background-image: url("../img/mlb_background.jpg");
+
+}
+
+* {
+  box-sizing: border-box;
+}
+canvas {
+  /* background: var(--canvas-bg); */
+}
+.hidden-images{
+    display: none;
+}
