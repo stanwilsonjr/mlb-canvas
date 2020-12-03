@@ -1,7 +1,4 @@
-:root {
-  --page-bg: #efefef;
-  --canvas-bg: #333;
-}
+ 
 html,
 body {
   width: 100%;
@@ -9,15 +6,42 @@ body {
 }
 body {
     background-image: url("../img/mlb_background.jpg");
-
 }
 
 * {
   box-sizing: border-box;
 }
-canvas {
-  /* background: var(--canvas-bg); */
+ 
+#loading-overlay{
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: flex;
+  vertical-align: top;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+
+
 }
-.hidden-images{
-    display: none;
+#loading-overlay.hide-loader{
+  display: none;
+}
+#canvas{
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+#canvas.content-loaded{
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+svg path,
+svg rect{
+  fill: rgb(256, 256, 256);
 }
