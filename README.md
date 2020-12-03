@@ -1,6 +1,6 @@
 # ⚾️ MLB CANVAS 
 
-App that pull from the MLB games api to build a games dashboard 
+App that pulls from the MLB games api to build a games dashboard 
 
 
 ## Install
